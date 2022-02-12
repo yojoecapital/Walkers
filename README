@@ -1,0 +1,22 @@
+CS450-PA4
+Jenifer Rodriguez Delgado
+Yousef Suleiman
+How to Build xv6-public with Walkers:
+  1. Download the xv6 directory onto your system
+  2. Enter the directory with “cd xv6-public”
+  3. To build xv6, type in the following:
+    “make clean
+     make”
+  ● Note: if you are getting permission errors, try running the
+    command “chmod 777 -R yourDirName” where yourDirName is the
+    path to the xv6 directory (containing the makeFile).
+  ● Note: xv6 will not build and run without qemu being installed.
+    To install qemu, run the commands:
+      “git clone http://web.mit.edu/ccutler/www/qemu.git -b
+       6.828-2.3.0
+       sudo apt-get install -y libsdl1.2-dev libtool-bin
+       libglib2.0-dev
+       libz-dev libpixman-1-dev”
+How to run xv6-public:
+  1. After successfully building, simply enter in the command
+  “make qemu-nox
